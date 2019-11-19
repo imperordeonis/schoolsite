@@ -6,27 +6,38 @@
     <style>
 		.container {
 			background-color: #DDDDDD;
-      padding: grid;
-      grid
+      padding: 4px;
+      display: grid;
+      grid-template-areas:
+           'header header header header header header'
+           'sub-left sub-left sub-left sub-right sub-right sub-right'
+           'left-menu left-menu main-area main-area main-area right-area'
+           'footer footer footer footer footer footer'
+      text align: center;
+      font-size: 24pt;
+      grid-gap: 5px;
 		}
 
 		.container div {
 			background-color: #A2A2EE;
 			text-align: center;
-			margin: 8px;
+			padding: 4px;
+      max-width: 300px;
+      min-width: 150px;
 		}
 		.container div img {
-			width: 80%;
+			width: 100%;
 		}
 	</style>
 </head>
 <body>
   <div class="container">
-    <div><img src="images/img1.jpg" /></div>
-    <div><img src="images/img2.jpg" /></div>
-    <div><img src="images/img3.jpg" /></div>
-    <div><img src="images/img4.jpg" /></div>
-    <div><img src="images/img5.jpg" /></div>
+    <div>Заголовок</div>
+    <div class="sub-left">Підзаголовок-1<img src="images/img1.jpg" /></div>
+    <div class="sub-right">Підзаголовок-2<img src="images/img2.jpg" /></div>
+    <div class="left-menu">Основний вміст<img src="images/img3.jpg" /></div>
+    <div class="main-area">Допоміжні дані<img src="images/img4.jpg" /></div>
+    <div class="footer">Підвал<img src="images/img5.jpg" /></div>
   </div>
 </div>
 </body>
